@@ -7,12 +7,58 @@
 <head>
 <meta charset="utf-8">
 <title>Create a Game</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	crossorigin="anonymous">
 
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+	rel="stylesheet">
+<link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="resources/main.css" type="text/css">
 </head>
-
 <body>
 
 
+	<div class="titleHeader">
+
+		<h1 id="title1">Best Retro Games of all time!</h1>
+
+	</div>
+
+	<div class="headerPicture">
+
+		<img alt="Retro Games"
+			src="https://wallpaperaccess.com/full/2717802.png">
+
+
+	</div>
+
+   	<div class="home">
+
+		<a href="home.do"> <h2>HOME</h2> </a>
+
+	</div>
+
+	<div class="pacmanBody">
+		<div class="pagination">
+			<input id="dot-1" type="radio" name="dots"> <label
+				for="dot-1"></label> <input id="dot-2" type="radio" name="dots">
+			<label for="dot-2"></label> <input id="dot-3" type="radio"
+				name="dots" checked="checked"> <label for="dot-3"></label> <input
+				id="dot-4" type="radio" name="dots"> <label for="dot-4"></label>
+			<input id="dot-5" type="radio" name="dots"> <label
+				for="dot-5"></label> <input id="dot-6" type="radio" name="dots">
+			<label for="dot-6"></label> <input id="dot-7" type="radio"
+				name="dots"> <label for="dot-7"></label> <input id="dot-8"
+				type="radio" name="dots"> <label for="dot-8"></label>
+			<div class="pacman"></div>
+		</div>
+	</div>
+
+<div class="center">
 <div class="create-form">
 <h2>Enter Game Information Here!</h2>
 	<form action="MakeGame.do" method="POST">
@@ -53,6 +99,10 @@
 		<button type="submit" class="niceButton">Create</button>
 			
 	</form>
+
+	</div>
+	</div>
+	<div class="footer">
 
 	</div>
 	<!-- Optional JavaScript -->
