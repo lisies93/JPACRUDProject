@@ -7,8 +7,11 @@ import com.skilldistillery.jpavideogame.entities.Game;
 public interface GameDAO {
 
 	
-	Game findById(int gameId);
-	List<Game> findAll();
-	
+	public Game findById(int gameId);
+	public List<Game> findAll();
+	public List<Game> findGameByKeyword(String keyword);
+	public Boolean deleteGame(int id);
+	public Game addNewGame(Game game);
+	public Game updateGame(int id, Game game);
 	
 }

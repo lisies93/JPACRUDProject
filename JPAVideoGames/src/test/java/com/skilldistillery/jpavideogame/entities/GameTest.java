@@ -45,7 +45,7 @@ class GameTest {
 	@DisplayName("test game entity mapping")
 	void test() {
 		assertNotNull(game);
-		assertEquals("Mario Bros", game.getName());
+		assertEquals("Pong", game.getName());
 	}
 
 }
