@@ -11,6 +11,7 @@ public class Game {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private int id;
+
 private String name;
 	
 public Game() {}
