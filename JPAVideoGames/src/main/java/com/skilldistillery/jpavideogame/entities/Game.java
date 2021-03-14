@@ -25,6 +25,10 @@ private String originalPlatform;
 @Column(name="released_year")
 private int releasedYear;
 
+private String description;
+
+private String image;
+
 
 public Game() {}
 
@@ -102,6 +106,27 @@ public String toString() {
 	return "Game [id=" + id + ", name=" + name + ", genre=" + genre + ", publisher=" + publisher + ", originalPlatform="
 			+ originalPlatform + ", releasedYear=" + releasedYear + "]";
 }
+
+
+public String getDescription() {
+	return description;
+}
+
+
+public void setDescription(String description) {
+	this.description = description;
+}
+
+
+public String getImage() {
+	return image;
+}
+
+
+public void setImage(String image) {
+	this.image = image;
+}
+
 
 
 }

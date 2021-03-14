@@ -24,7 +24,7 @@
 
 	<div class="titleHeader">
 
-		<h1 id="title1">Best Retro Games of all time!</h1>
+		<h1 id="title1">BEST RETRO GAMES OF ALL TIME!</h1>
 
 	</div>
 
@@ -71,6 +71,17 @@
   <h1>${game.name} (${game.releasedYear})</h1>
   <br>
   <br>
+  <h3>Description</h3>
+   <c:choose>
+  <c:when test="${empty game.description}">
+  <p>No description yet</p>
+  </c:when>
+  <c:otherwise>
+  <p>${game.description}</p>
+  </c:otherwise>
+  </c:choose>
+  <br>
+  <br>
   <h3>Genre</h3>
   <p>${game.genre}</p>
   <br>
@@ -81,6 +92,13 @@
   <br>
   <h3>Original Platform</h3>
   <p>${game.originalPlatform}</p>
+  <br>
+  <br>
+  <c:if test="${ not empty game.image}">
+  <div class="gameImg">
+  <img alt="" src="${game.image}">
+  </div>
+  </c:if>
   <br>
   <br>
 

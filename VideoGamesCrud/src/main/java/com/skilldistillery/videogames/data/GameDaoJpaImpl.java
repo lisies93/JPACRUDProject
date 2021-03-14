@@ -68,6 +68,8 @@ public class GameDaoJpaImpl implements GameDAO {
 		managedGame.setPublisher(game.getPublisher());
 		managedGame.setOriginalPlatform(game.getOriginalPlatform());
 		managedGame.setReleasedYear(game.getReleasedYear());
+		managedGame.setDescription(game.getDescription());
+		managedGame.setImage(game.getImage());
 
 		return managedGame;
 	}

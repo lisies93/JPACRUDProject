@@ -24,7 +24,7 @@
 
 	<div class="titleHeader">
 
-		<h1 id="title1">Best Retro Games of all time!</h1>
+		<h1 id="title1">BEST RETRO GAMES OF ALL TIME!</h1>
 
 	</div>
 
@@ -61,12 +61,20 @@
 <div class="center">
 <div class="create-form">
 <h2>Enter Game Information Here!</h2>
+<br>
 	<form action="MakeGame.do" method="POST">
 	
 		<div class="form-group">
 		<!-- text -->
 		<label for="name">Name</label>
 		<input class="customInputText" id="name" type="text" name="name" value="" size="15" placeholder="Name" required/> 
+		</div>
+		
+		<div class="form-group">
+		<!-- text -->
+		<label for="description">Description</label> <br>
+		<textarea class="customInputText" id="description" name="description" rows="5" cols="10" placeholder="Description" maxlength="1000" >
+       </textarea>
 		</div>
 		
 		<div class="form-group">
@@ -92,12 +100,19 @@
 		<label for="releasedYear">Released Year</label>
 		<input type="Number" name="releasedYear" id="releasedYear" min="1920" max="2021" size="6" placeholder="Year" required/> 
 		</div>
+		
+		<div class="form-group">
+		<!-- drop down -->
+		<label for="image">Image URL</label>
+	    <input class="customInputText" id="image" type="text" name="image" value="" size="15" placeholder="image" /> 
+		</div>
 		<br>
 		<hr>
 		<br>
 		
-		<button type="submit" class="niceButton">Create</button>
-			
+		<div  class="buttonDU">
+		<button type="submit" class="nes-btn is-primary">Create</button>
+		</div>	
 	</form>
 
 	</div>

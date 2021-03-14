@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<title>update game</title>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <link
@@ -24,7 +25,7 @@
 
 	<div class="titleHeader">
 
-		<h1 id="title1">Best Retro Games of all time!</h1>
+		<h1 id="title1">BEST RETRO GAMES OF ALL TIME!</h1>
 
 	</div>
 
@@ -68,6 +69,7 @@
 			</c:when>
 			<c:otherwise>
 				<h2>Enter Game Information Here!</h2>
+				<br>
 				<form action="UpdateGame.do" method="POST">
 
 					<div class="form-group">
@@ -80,6 +82,14 @@
 						<label for="name">Name</label> <input class="customInputText"
 							id="name" type="text" name="name" value="${game.name}"
 							size="15" placeholder="Name" required />
+					</div>
+					
+					<div class="form-group">
+						<!-- text -->
+						<label for="description">Description </label> <br>
+						<textarea class="customInputText" id="description" name="description" rows="5" cols="10" placeholder="Description" value="${game.description}" maxlength="1000" >
+                         ${game.description}
+                        </textarea>
 					</div>
 					
 					<div class="form-group">
@@ -112,12 +122,21 @@
 							value="${year}" min="1920" max="2021" size="6" placeholder="Year"
 							required />
 					</div>
+					
+					<div class="form-group">
+						<!-- text -->
+						<label for="image">Image URL</label> <input class="customInputText"
+							id="image" type="text" name="image" value="${game.image}"
+							size="15" placeholder="Image"  />
+					</div>
 
 					<br>
 					<hr>
 					<br>
-
-					<button type="submit" class="niceButton">Update</button>
+					
+                    <div  class="buttonDU">
+					<button type="submit" class="nes-btn is-primary">Update</button>
+					</div>
 				</form>
 
 			</c:otherwise>

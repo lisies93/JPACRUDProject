@@ -24,7 +24,7 @@
 
 	<div class="titleHeader">
 
-		<h1 id="title1">Best Retro Games of all time!</h1>
+		<h1 id="title1">BEST RETRO GAMES OF ALL TIME!</h1>
 
 	</div>
 

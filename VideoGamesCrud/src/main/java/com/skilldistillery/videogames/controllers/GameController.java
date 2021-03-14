@@ -41,7 +41,7 @@ public class GameController {
 	@RequestMapping(path = "getGame.do", params = "keyword", method = RequestMethod.GET)
 	public ModelAndView findGamesByKeyword(String keyword) {
 		ModelAndView mv = new ModelAndView();
-
+        mv.addObject("key", keyword);
 		mv.addObject("games", dao.findGameByKeyword("%" + keyword + "%"));
 		mv.setViewName("allGames");
 

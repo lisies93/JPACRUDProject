@@ -24,7 +24,7 @@
 
 	<div class="titleHeader">
 
-		<h1 id="title1">Best Retro Games of all time!</h1>
+		<h1 id="title1">BEST RETRO GAMES OF ALL TIME!</h1>
 
 	</div>
 
@@ -57,8 +57,16 @@
 			<div class="pacman"></div>
 		</div>
 	</div>
-
 	<div class="center">
+	<c:choose>
+
+		<c:when test="${empty games}">
+			<h3>No games were found with keyword "${key}".</h3>
+		</c:when>
+
+		<c:otherwise>
+
+	
 	<h3>Games</h3>
 	<table class="table table-striped table-hover">
 		<thead class="table-dark">
@@ -81,6 +89,9 @@
 		</c:forEach>
 		</tbody>
 	</table>
+	</c:otherwise>
+	</c:choose>
+	
 	</div>
 	<div class="footer">
 
